@@ -23,7 +23,7 @@ const auth = async (req, res, next) => {
         next();
 
     } catch (error) {
-        res.status(401).json({ message: error.message });
+        res.status(401).json({ message: "No token headers" });
     }
 }
 
